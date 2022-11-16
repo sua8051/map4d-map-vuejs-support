@@ -16,11 +16,7 @@ export default {
     options: Object
   },
   data() {
-    return {
-      scriptElement: null,
-      mapRef: null,
-      mapCallback: null,
-    }
+    return {}
   },
   methods: {
     createCallback() {
@@ -76,7 +72,7 @@ export default {
   },
   mounted() {
     this.createCallback()
-    this.loadMapScript()    
+    this.loadMapScript()
   },
   updated(){    
   },
