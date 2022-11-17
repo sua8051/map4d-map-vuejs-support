@@ -47,7 +47,7 @@ export default {
       } else {
         //Invoke callback if map4d is existed
         window.map4d && window[this.mapCallback] && window[this.mapCallback]()
-      }      
+      }
     },
     addLibrary(url, id) {
       let scriptId = `script_${id}`
@@ -71,13 +71,12 @@ export default {
       this.scriptElement = null
       this.mapRef = null
     }
-  },  
-  beforeUpdate(){
   },
+  beforeUpdate(){},
   mounted() {
     this.createCallback()
-    this.loadMapScript()    
-  },  
+    this.loadMapScript()
+  },
   beforeUnmount(){
     this.destroy()
   }
